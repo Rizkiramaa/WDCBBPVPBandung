@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda Peminjaman Barang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="bg-[#003366] text-black-100 font-sans">
+
+  <!-- Hero -->
+  <!-- ...existing code... -->
+  <!-- Hero -->
+  <section class="bg-blue-200 py-16 text-center rounded-b-3xl shadow-lg">
+    <div class="max-w-3xl mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-4 text-[#003366]">Selamat Datang di Sistem Peminjaman Barang WDC BBPVP Bandung</h1>
+      <p class="text-lg text-blue-900">Klik ajukan peminjaman barang yang tersedia dibawah.</p>
+       <!-- Search Bar -->
+      <div class="flex justify-center mb-8" style="padding-top: 20px;">
+        <input
+          type="text"
+          id="searchInput"
+          class="w-full max-w-md px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Cari nama barang..."
+        />
+      </div>
+    </div>
+  </section>
+<!-- ...existing code... -->
+
+<!-- Galeri Barang -->
+<!-- ...existing code... -->
+
+<!-- Galeri Barang -->
+<section class="py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-semibold mb-6 text-center text-white">Barang Tersedia</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="barangList">
+      <!-- Kartu Barang -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition barang-item">
+        <img src="https://via.placeholder.com/400x250?text=Laptop" alt="Laptop" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Laptop Lenovo ThinkPad</h3>
+          <p class="text-sm text-gray-600 mb-4">Laptop untuk pekerjaan sehari-hari.</p>
+          <a href="form-peminjaman.html?barang=laptop-lenovo" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Pinjam Sekarang</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition barang-item">
+        <img src="https://via.placeholder.com/400x250?text=Proyektor" alt="Proyektor" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Proyektor Epson X300</h3>
+          <p class="text-sm text-gray-600 mb-4">Proyektor untuk presentasi dan rapat.</p>
+          <a href="form-peminjaman.html?barang=proyektor-epson" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Pinjam Sekarang</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition barang-item">
+        <img src="https://via.placeholder.com/400x250?text=Kamera" alt="Kamera" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Kamera Canon EOS</h3>
+          <p class="text-sm text-gray-600 mb-4">Kamera untuk dokumentasi kegiatan.</p>
+          <a href="form-peminjaman.html?barang=kamera-canon" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Pinjam Sekarang</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition barang-item">
+        <img src="https://via.placeholder.com/400x250?text=Speaker" alt="Speaker" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Speaker Logitech</h3>
+          <p class="text-sm text-gray-600 mb-4">Speaker untuk kebutuhan audio ruangan.</p>
+          <a href="form-peminjaman.html?barang=speaker-logitech" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Pinjam Sekarang</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition barang-item">
+        <img src="https://via.placeholder.com/400x250?text=Printer" alt="Printer" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Printer HP LaserJet</h3>
+          <p class="text-sm text-gray-600 mb-4">Printer untuk kebutuhan cetak dokumen.</p>
+          <a href="form-peminjaman.html?barang=printer-hp" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Pinjam Sekarang</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition barang-item">
+        <img src="https://via.placeholder.com/400x250?text=Scanner" alt="Scanner" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Scanner Canon Lide</h3>
+          <p class="text-sm text-gray-600 mb-4">Scanner dokumen dan gambar.</p>
+          <a href="form-peminjaman.html?barang=scanner-canon" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Pinjam Sekarang</a>
+        </div>
+      </div>
+      <!-- Tambahkan barang lain sesuai kebutuhan -->
+    </div>
+  </div>
+</section>
+<!-- ...existing code... -->
+</script>
+<!-- ...existing code... -->
+<!-- ...existing code... -->
+
+ <!-- ...existing code... -->
+
+  <!-- CTA -->
+  <section class="bg-blue-200 text-[#003366] py-12 mt-10 rounded-3xl shadow-lg">
+    <div class="max-w-3xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-4">MUDAH, CEPAT, DAN PRAKTIS.</h2>
+      <p class="mb-6">Sistem ini memudahkan peminjaman barang tanpa harus bertemu langsung dengan petugas ruangan.</p>
+    </div>
+  </section>
+
+<!-- ...existing code... -->
+
+<script>
+    // Fitur search bar
+    document.getElementById('searchInput').addEventListener('input', function() {
+      const keyword = this.value.toLowerCase();
+      document.querySelectorAll('.barang-item').forEach(function(item) {
+        const text = item.innerText.toLowerCase();
+        item.style.display = text.includes(keyword) ? '' : 'none';
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-white py-6 bg-[#002244] mt-8">
+    &copy; 2025 Sistem Peminjaman Barang. Semua Hak Dilindungi.
+  </footer>
+
+</body>
+</html>

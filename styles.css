@@ -1,0 +1,66 @@
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  background-color: #d0e7f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  /* overflow: hidden; */ /* Hapus baris ini */
+}
+
+body::before {
+  content: "";
+  position: absolute; /* Ubah dari fixed ke absolute */
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background-image: url('../gedung wdc 2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(8px);
+  opacity: 0.7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+input, button {
+  padding: 8px;
+}
+
+.info {
+  color: red;
+  font-size:x-small;
+}
+
+p {
+   font-size: small;
+  color: #333;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.logo-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 10px;
+    }
+
+    .logo-kemnaker {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .logo-tik {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
